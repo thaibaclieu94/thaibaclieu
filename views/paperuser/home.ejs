@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/stylepaper/style-home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/stylepaper/Home.css">
+    <title>Trang Chủ</title>
+</head>
+<body>
+  <header> 
+    <audio controls autoplay loop hidden="true">
+      
+        </audio>
+  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="/" style="margin-left: 180px; ">Trang Chủ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/luffy">LUFFY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/zoro">ZORO</a>
+        </li>
+        <li class="nav-item">
+            <a href="/view-cart/<%- listSession._id%>" class="nav-link" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng <strong id="quantityCart" style="color: rgb(226, 214, 214);"> <%-listSession.cart.length%> </strong>
+              </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+         
+    <div class="container" >
+        <div class="jumbotron">
+            <h1>ATN ShopVN</h1>
+            <p>ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. The company has the revenue over 500.000 dollars/year. Currently each shop has its own database to store transactions for that shop only. Each shop has to send the sale data to the board director monthly and the board director need lots of time to summarize the data collected from all the shops. Besides the board can’t see the stock information update in real time.</p>
+           
+
+            <p>
+              <a class="btn btn-lg btn-primary" href="/luffy" role="button">Shop lufy »</a>
+              <a class="btn btn-lg btn-primary" href="/zoro" role="button">Shop zoro »</a>
+              <a class="btn btn-lg btn-primary" href="/login" role="button">login »</a>
+            </p>
+            </p>
+          </div>
+    </div>
+</main>
+  
+    
+</body>
+</html>
